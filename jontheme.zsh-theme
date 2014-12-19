@@ -1,4 +1,4 @@
-PROMPT='%{$fg_bold[blue]%}[Jonathan]:%{$reset_color%} '
+PROMPT='%{$fg_bold[blue]%}[%n]:%{$reset_color%} '
 
 RPROMPT='%{$fg_bold[blue]%}[%~]$(git_prompt_info)%{$reset_color%}'
 
