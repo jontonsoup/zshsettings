@@ -51,8 +51,24 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/Users/jmfriedm/.rbenv/shims:/Users/jmfriedm/.rbenv/bin:/usr/local/opt/nvm/v0.10.31/bin:/Users/jmfriedm/.bin:/Users/jmfriedm/.bin:/Users/jmfriedm/.bin:/Users/jmfriedm/.bin:/Users/jmfriedm/.bin:/Users/jmfriedm/.bin:/Users/jmfriedm/.bin:/Users/jmfriedm/.bin:/Users/jmfriedm/.bin:/usr/local/bin:/Users/jmfriedm/.bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/lib/node_modules"
-# export MANPATH="/usr/local/man:$MANPATH"
+PATH="/Users/$USER/.rbenv/shims"
+PATH="$PATH:$HOME/.rvm/bin"
+PATH="$PATH:/Users/$USER/.rbenv/bin"
+PATH="$PATH:/usr/local/bin"
+PATH="$PATH:/usr/local/sbin"
+PATH="$PATH:/usr/bin"
+PATH="$PATH:/bin"
+PATH="$PATH:/usr/sbin"
+PATH="$PATH:/sbin"
+PATH="$PATH:/Users/$USER/.bin"
+PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
+PATH="$PATH:/Users/$USER/Qt/5.4/clang_64/bin"
+export PATH="$PATH:/Users/$USER/.rvm/gems/ruby-2.2.0/bin"
+
+export TERM=screen-256color
+export PGHOST=localhost
+
+# export MANPATH="$PATH:/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -75,3 +91,9 @@ export PATH="/usr/local/bin:/Users/jmfriedm/.rbenv/shims:/Users/jmfriedm/.rbenv/
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
+#fasd
+fasd_cache="$HOME/.fasd-init-bash"#fasd
+eval "$(fasd --init auto)"
+
+export PATH="$HOME/.bin:$PATH"
