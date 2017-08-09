@@ -50,10 +50,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-PATH="/Users/$USER/.rbenv/shims"
-PATH="$PATH:$HOME/.rvm/bin"
-PATH="$PATH:/Users/$USER/.rbenv/bin"
 PATH="$PATH:/usr/local/bin"
 PATH="$PATH:/usr/local/sbin"
 PATH="$PATH:/usr/bin"
@@ -61,9 +57,8 @@ PATH="$PATH:/bin"
 PATH="$PATH:/usr/sbin"
 PATH="$PATH:/sbin"
 PATH="$PATH:/Users/$USER/.bin"
-PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
-PATH="$PATH:/Users/$USER/Qt/5.4/clang_64/bin"
-export PATH="$PATH:/Users/$USER/.rvm/gems/ruby-2.2.0/bin"
+PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.6/bin"
+export PATH="$PATH:/Users/$USER/Qt/5.4/clang_64/bin"
 
 export TERM=screen-256color
 export PGHOST=localhost
